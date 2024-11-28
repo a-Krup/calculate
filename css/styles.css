@@ -18,9 +18,8 @@ body {
 }
 
 #display {
-  width: 100%;
   padding: 10px;
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: left;
   background-color: #bebec2;
   border: 8px solid;
@@ -49,13 +48,13 @@ button {
 
 @media screen and (min-width: 768px) {
   #calculator {
-  max-width: 500px;
-  overflow: hidden;
+   max-width: 500px;
   
 }
 #display {
   border: 8px solid;
   max-width: 440px;
+  font-size: 5rem;
 }
 
 #keys {
