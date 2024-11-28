@@ -1,10 +1,10 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 90vh;
-  padding: 50px;
+  padding: 40px 0;
 }
 
 #calculator {
@@ -12,31 +12,31 @@ body {
   background-color: #515154;
   border-radius: 15px;
   border: 2px solid black;
-  max-width: 500px;
+  max-width: 350px;
   overflow: hidden;
   
 }
 
 #display {
   width: 100%;
-  padding: 20px;
-  font-size: 5rem;
+  padding: 10px;
+  font-size: 2rem;
   text-align: left;
   background-color: #bebec2;
   border: 8px solid;
-  max-width: 440px;
+  max-width: 315px;
 }
 
 #keys {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
-  padding: 25px;
+  padding: 15px;
 }
 
 button {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   border-radius: 50px;
   border: none;
   background-color: black;
@@ -45,6 +45,30 @@ button {
   font-weight: bold;
   cursor: pointer;
   
+}
+
+@media screen and (min-width: 768px) {
+  #calculator {
+  max-width: 500px;
+  overflow: hidden;
+  
+}
+#display {
+  border: 8px solid;
+  max-width: 440px;
+}
+
+#keys {
+ 
+  padding: 25px;
+}
+
+button {
+  width: 90px;
+  height: 90px;
+    
+}
+
 }
 
 button:hover {
